@@ -1,6 +1,8 @@
+// src/components/Navbar.tsx
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
 
 const Navbar = () => {
@@ -41,15 +43,27 @@ const Navbar = () => {
   return (
     <nav className="bg-[#FFE0D7] p-4 shadow">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-orange-500">
-          ParentCare
+        {/* Logo dan Brand */}
+        <Link href="/" className="flex items-center space-x-3">
+          <div className="relative w-10 h-10">
+            <Image
+              src="/parentcarelogo.png"
+              alt="ParentCare Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span className="text-2xl font-bold text-orange-500">
+            ParentCare
+          </span>
         </Link>
         
         <div className="flex items-center space-x-6">
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-4">
-            <Link href="/konsultasi" className="text-gray-800 hover:text-orange-500 transition-colors">
-              Konsultasi
+            <Link href="/parent-match" className="text-gray-800 hover:text-orange-500 transition-colors">
+              Parent Match
             </Link>
             <Link href="/artikel" className="text-gray-800 hover:text-orange-500 transition-colors">
               Artikel
@@ -57,7 +71,7 @@ const Navbar = () => {
             <Link href="/forum" className="text-gray-800 hover:text-orange-500 transition-colors">
               Forum
             </Link>
-            <Link href="/About" className="text-gray-800 hover:text-orange-500 transition-colors">
+            <Link href="/about" className="text-gray-800 hover:text-orange-500 transition-colors">
               About Us
             </Link>
           </div>
