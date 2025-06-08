@@ -1,0 +1,57 @@
+PARENTCARE-FE/
+│
+├── .next/                    # Folder build otomatis dari Next.js
+├── node_modules/             # Dependency dari npm
+│
+├── public/                   # Static assets (ikon, gambar, dll)
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+│
+├── src/                      # Folder utama source code
+│   ├── app/                  # App router (Next.js 13+)
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   ├── artikel/
+│   │   │   └── page.tsx
+│   │   ├── auth/
+│   │   │   ├── forgot-password/
+│   │   │   │   └── page.tsx
+│   │   │   ├── login/
+│   │   │   │   └── page.tsx
+│   │   │   └── register/
+│   │   │       └── page.tsx
+│   │   ├── forum/
+│   │   │   └── page.tsx
+│   │   ├── parent-match/
+│   │   │   └── page.tsx
+│   │   ├── profile/
+│   │   │   └── page.tsx
+│   │   └── settings/
+│   │   │   └── page.tsx
+│   │   ├── ClientLayout.tsx
+│   │   ├── favicon.ico
+│   │   ├── layout.tsx
+│   │   ├── page.module.css
+│   │   └── page.tsx
+│
+│   ├── components/           # Komponen reusable
+│   │   ├── ArticleCard.tsx
+│   │   ├── ForumPost.tsx
+│   │   └── Navbar.tsx
+│
+│   └── styles/               # File CSS global
+│       └── globals.css
+│
+├── .gitignore
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── tsconfig.json
