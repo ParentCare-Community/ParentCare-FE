@@ -4,6 +4,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
+import Footer from '../components/Footer';
 
 interface Testimonial {
   id: number;
@@ -390,6 +391,7 @@ export default function Home() {
         </section>
 
       </main>
+      <Footer />
     </div>
   );
 }
