@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id"> 
-      <body className={`${inter.variable} bg-orange-100 min-h-screen`}>
+      <body className={`${inter.variable} `}>
         <ClientLayout>
           {children}
         </ClientLayout>
