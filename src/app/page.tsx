@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.heroImage}>
-            <Image src="/family.png" alt="Hero Image" width={500} height={400} className="rounded-lg" />
+            <Image src="/family.png" alt="Hero Image" width={500} height={400} className="rounded-lg auto-size" loading="eager" />
           </div>
         </section>
 
@@ -363,7 +363,7 @@ export default function Home() {
                   </div>
                   
                   <p className="text-gray-700 leading-relaxed italic mb-4">
-                    "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                   </p>
                   
                   <div className="flex text-yellow-400">
