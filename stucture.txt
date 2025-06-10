@@ -1,0 +1,50 @@
+ParentCare-FE/
+├── .gitignore
+├── README.md
+├── eslint.config.mjs
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── public/
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   ├── family.png
+│   ├── parentcarelogo.png
+│   ├── parentcarelogo2.png
+│   └── window.svg
+└── src/
+    ├── app/
+    │   ├── about/
+    │   │   └── page.tsx
+    │   ├── artikel/
+    │   │   └── page.tsx
+    │   ├── auth/
+    │   │   ├── register/
+    │   │   │    └── pages.tsx
+    │   │   ├── login/
+    │   │   │    └── pages.tsx
+    │   │   └── forgot-password/
+    │   │        └── pages.tsx
+    │   ├── forum/
+    │   │   └── page.tsx
+    │   ├── profile/
+    │   │   └── page.tsx 
+    │   ├── parent-match/
+    │   │   └── page.tsx
+    │   ├── ClientLayout.tsx    
+    │   ├── favicon.ico
+    │   ├── layout.tsx
+    │   ├── page.module.css
+    │   └── page.tsx
+    ├── components/
+    │   ├── ArticleCard.tsx
+    │   ├── ForumPost.tsx
+    │   ├── Navbar.tsx    
+    │   └── ParentMatchQuiz.tsx
+    └── styles/
+        └── globals.css
