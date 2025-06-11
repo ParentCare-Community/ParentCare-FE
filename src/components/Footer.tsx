@@ -8,13 +8,11 @@ const Footer = () => {
   const footerLinks = {
     layanan: [
       { name: 'Parent Match Quiz', href: '/parent-match' },
-      { name: 'Artikel Parenting', href: '/articles' },
+      { name: 'Artikel Parenting', href: '/artikel' },
       { name: 'Forum Diskusi', href: '/forum' }
     ],
     tentang: [
       { name: 'Tentang Kami', href: '/about' },
-      { name: 'Tim Ahli', href: '/experts' },
-      { name: 'Testimoni', href: '/testimonials' },
       { name: 'FAQ', href: '/faq' }
     ],
     bantuan: [
@@ -174,10 +172,6 @@ const Footer = () => {
               <span className="text-gray-600">|</span>
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                 Kebijakan Privasi
-              </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/sitemap" className="text-gray-400 hover:text-white transition-colors">
-                Sitemap
               </Link>
             </div>
           </div>
