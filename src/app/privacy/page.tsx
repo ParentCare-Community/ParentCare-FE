@@ -202,7 +202,7 @@ export default function PrivacyPolicy() {
             Daftar Isi
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {sections.map((section, index) => (
+            {sections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
@@ -219,7 +219,7 @@ export default function PrivacyPolicy() {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="space-y-12">
-            {sections.map((section, sectionIndex) => (
+            {sections.map((section) => (
               <div key={section.id} id={section.id} className="scroll-mt-20">
                 <div className="bg-white rounded-xl p-8 shadow-lg">
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">

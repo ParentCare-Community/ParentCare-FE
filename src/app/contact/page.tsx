@@ -1,4 +1,3 @@
-// src/app/contact/page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -99,7 +98,7 @@ export default function ContactPage() {
         setSubmitStatus('idle');
       }, 5000);
       
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
       setTimeout(() => {
         setSubmitStatus('idle');

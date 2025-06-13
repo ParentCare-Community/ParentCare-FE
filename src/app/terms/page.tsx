@@ -1,11 +1,10 @@
-// src/app/terms/page.tsx
 'use client';
 
 import React from 'react';
-import Footer from '../../components/Footer'; // Tambahkan import Footer di sini
+import Footer from '../../components/Footer'; 
 
 const TermsAndConditionsPage = () => {
-  const lastUpdated = "15 Januari 2025";
+  const lastUpdated = "10 Juni 2025";
 
   return (
     <div className="min-h-screen bg-[#fff5f0]">
@@ -56,10 +55,10 @@ const TermsAndConditionsPage = () => {
                 Definisi dan Interpretasi
               </h3>
               <div className="text-gray-700 space-y-4">
-                <p><strong className="text-orange-600">"ParentCare"</strong> mengacu pada platform digital parenting yang menyediakan layanan konsultasi, artikel, dan forum diskusi.</p>
-                <p><strong className="text-orange-600">"Pengguna"</strong> adalah setiap individu yang mengakses atau menggunakan layanan ParentCare.</p>
-                <p><strong className="text-orange-600">"Layanan"</strong> mencakup semua fitur yang tersedia di platform, termasuk Parent Match Quiz, artikel parenting, dan forum diskusi.</p>
-                <p><strong className="text-orange-600">"Konten"</strong> adalah semua informasi, teks, gambar, video, atau materi lain yang tersedia di platform.</p>
+                <p><strong className="text-orange-600">&quot;ParentCare&quot;</strong> mengacu pada platform digital parenting yang menyediakan layanan konsultasi, artikel, dan forum diskusi.</p>
+                <p><strong className="text-orange-600">&quot;Pengguna&quot;</strong> adalah setiap individu yang mengakses atau menggunakan layanan ParentCare.</p>
+                <p><strong className="text-orange-600">&quot;Layanan&quot;</strong> mencakup semua fitur yang tersedia di platform, termasuk Parent Match Quiz, artikel parenting, dan forum diskusi.</p>
+                <p><strong className="text-orange-600">&quot;Konten&quot;</strong> adalah semua informasi, teks, gambar, video, atau materi lain yang tersedia di platform.</p>
               </div>
             </div>
 
@@ -171,7 +170,7 @@ const TermsAndConditionsPage = () => {
                   <p>ParentCare menyediakan informasi edukatif dan tidak menggantikan konsultasi medis profesional. 
                   Kami tidak bertanggung jawab atas keputusan yang diambil berdasarkan informasi dari platform ini.</p>
                 </div>
-                <p>Layanan disediakan "sebagaimana adanya" tanpa jaminan tersurat maupun tersirat mengenai:</p>
+                <p>Layanan disediakan &quot;sebagaimana adanya&quot; tanpa jaminan tersurat maupun tersirat mengenai:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>Keakuratan, kelengkapan, atau keandalan informasi</li>
                   <li>Kesesuaian untuk tujuan tertentu</li>

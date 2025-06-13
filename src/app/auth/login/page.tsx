@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 export default function LoginPage() {
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     email: '',
     password: ''
   });
@@ -19,10 +19,39 @@ export default function LoginPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your login logic here
-    console.log('Login submitted:', formData);
+
+    try {
+      const res = await fetch('http://localhost:4000/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include', // ⬅️ penting untuk kirim & terima cookie
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password
+        })
+      });
+
+      console.log('Status:', res.status);
+console.log('Response Headers:', res.headers);
+
+const result = await res.json();
+console.log('Response Body:', result);
+
+      if (!res.ok) {
+        alert(result.message || 'Login gagal');
+      } else {
+        alert('Login berhasil!');
+        window.location.href = '/'; // ⬅️ redirect ke home setelah login
+      }
+
+    } catch (error) {
+      console.error(error);
+      alert('Terjadi kesalahan saat login');
+    }
   };
 
   const handleGoogleLogin = () => {
