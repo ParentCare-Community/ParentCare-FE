@@ -14,6 +14,12 @@ export default function RegisterPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+  const handleGoogleRegister = () => {
+    // Add Google registration logic here
+    console.log('Google registration clicked');
+  };
+   const [loading, setLoading] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -22,15 +28,49 @@ export default function RegisterPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Add your registration logic here
-    console.log('Form submitted:', formData);
-  };
 
-  const handleGoogleRegister = () => {
-    // Add Google registration logic here
-    console.log('Google registration clicked');
+    if (formData.password !== formData.confirmPassword) {
+      alert('Konfirmasi password tidak cocok');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await fetch('http://localhost:4000/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          namaLengkap: formData.namaLengkap,
+          email: formData.email,
+          password: formData.password
+        })
+      });
+
+      const result = await res.json();
+
+      if (!res.ok) {
+        alert(result.message || 'Registrasi gagal');
+      } else {
+        alert('Registrasi berhasil!');
+        // Reset form
+        setFormData({
+          namaLengkap: '',
+          email: '',
+          password: '',
+          confirmPassword: ''
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Terjadi kesalahan koneksi');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

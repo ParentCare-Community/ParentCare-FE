@@ -1,3 +1,4 @@
+Structure File
 ParentCare-FE/
 ├── .gitignore
 ├── README.md
@@ -40,10 +41,16 @@ ParentCare-FE/
     │   ├── favicon.ico
     │   ├── layout.tsx
     │   ├── page.module.css
-    │   └── page.tsx
+    │   ├── page.tsx    
+    │   └── type.ts
     ├── components/
+    │   ├── hook/
+    │   │   └── useAuth.tsx    
     │   ├── ArticleCard.tsx
+    │   ├── auth.contetx.tsx
+    │   ├── Footer.tsx    
     │   ├── ForumPost.tsx
+    │   ├── NewPostForm.tsx       
     │   ├── Navbar.tsx    
     │   └── ParentMatchQuiz.tsx
     └── styles/

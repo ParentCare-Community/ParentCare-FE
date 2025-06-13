@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from 'react';
 import Link from 'next/link';
 
@@ -16,7 +15,6 @@ const Footer = () => {
       { name: 'FAQ', href: '/faq' }
     ],
     bantuan: [
-      { name: 'Pusat Bantuan', href: '/help' },
       { name: 'Kontak Kami', href: '/contact' },
       { name: 'Syarat & Ketentuan', href: '/terms' },
       { name: 'Kebijakan Privasi', href: '/privacy' }

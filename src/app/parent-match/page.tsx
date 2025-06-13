@@ -1,8 +1,8 @@
-// src/app/parent-match/page.tsx
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import ParentMatchQuiz from '../../components/ParentMatchQuiz';
+import React, { useState } from "react";
+import ParentMatchQuiz from "../../components/ParentMatchQuiz";
+import Footer from "../../components/Footer";
 
 const ParentMatchPage = () => {
   const [showQuiz, setShowQuiz] = useState(false);
@@ -17,8 +17,18 @@ const ParentMatchPage = () => {
               onClick={() => setShowQuiz(false)}
               className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium mb-4 transition-colors duration-200"
             >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Kembali ke Beranda
             </button>
@@ -26,7 +36,8 @@ const ParentMatchPage = () => {
               Parent Match Quiz
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Jawab 10 pertanyaan berikut untuk mendapatkan analisis gaya parenting Anda dan rekomendasi yang tepat
+              Jawab 10 pertanyaan berikut untuk mendapatkan analisis gaya
+              parenting Anda dan rekomendasi yang tepat
             </p>
           </div>
 
@@ -44,24 +55,36 @@ const ParentMatchPage = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Temukan Gaya 
+              Temukan Gaya
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
-                {" "}Parenting{" "}
+                {" "}
+                Parenting{" "}
               </span>
               Terbaik Anda
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Dengan Parent Match, dapatkan pemahaman mendalam tentang gaya parenting Anda 
-              melalui quiz interaktif dan rekomendasi yang dipersonalisasi untuk keluarga yang lebih harmonis.
+              Dengan Parent Match, dapatkan pemahaman mendalam tentang gaya
+              parenting Anda melalui quiz interaktif dan rekomendasi yang
+              dipersonalisasi untuk keluarga yang lebih harmonis.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={() => setShowQuiz(true)}
                 className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center"
               >
-                <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg
+                  className="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
                 Mulai Quiz Sekarang
               </button>
@@ -72,7 +95,9 @@ const ParentMatchPage = () => {
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
-                <div className="text-3xl font-bold text-orange-500 mb-2">10</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">
+                  10
+                </div>
                 <div className="text-gray-600">Pertanyaan Terarah</div>
               </div>
               <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg">
@@ -87,6 +112,7 @@ const ParentMatchPage = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

@@ -26,21 +26,21 @@ export default function About() {
       image: "/team/syahrani.jpg",
     },
     {
-      name: "Shafira",
+      name: "Safiratun Nisa",
       role: "Machine Learning",
       education: "S1 Teknik Informatika, Universitas Muhammadiyah Cirebon",
-      image: "/team/shafira.jpg",
+      image: "/team/safira.jpg",
     },
     {
-      name: "Shakira",
+      name: "Shakira Angelina Ika Putri",
       role: "Machine Learning",
-      education: "S2 Psikologi Anak, Universitas Brawijaya",
+      education: "S1 Teknik Informatika, Universitas Mercu Buana",
       image: "/team/shakira.jpg",
     },
     {
-      name: "Nabiel",
+      name: "Nabiel Muhammad Imjauzanansyah",
       role: "Machine Learning",
-      education: "S1 Teknologi Pendidikan, Universitas Muhammadiyah Cirebon",
+      education: "S1 Teknik Informatika, Universitas Muhammadiyah Sumatera Utara",
       image: "/team/nabiel.jpg",
     },
   ];
@@ -223,7 +223,7 @@ export default function About() {
                     alt={member.name}
                     width={120}
                     height={120}
-                    className="rounded-full mb-6 object-cover"
+                    className={`rounded-full mb-6 object-cover ${styles.teamCardProfile}`}
                   />
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {member.name}

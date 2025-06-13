@@ -13,8 +13,6 @@
 # testing
 /coverage
 
-structure.txt
-
 # next.js
 /.next/
 /out/
